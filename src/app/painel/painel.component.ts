@@ -35,6 +35,9 @@ export class PainelComponent implements OnInit {
         this.rodada++;
         this.atualizaRodada();
         this.progresso += 25;
+        if (this.rodada === 4 ) {
+          alert('Fim de jogo, você venceu.');
+        }
      } else {
        this.tentativas--;
        if (this.tentativas === -1) {
